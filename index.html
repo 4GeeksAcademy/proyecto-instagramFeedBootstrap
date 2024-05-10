@@ -14,14 +14,14 @@
   <!-- Navbar lado IZQUIERDO-->
   <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand ms-4" href="#">
         <i class="bi bi-instagram"></i>
         Instagram
       </a>
       <!-- Navbar lado DERECHO-->
       <ul class="nav nav-pills justify-content-end">
         <li class="nav-item">
-        <!-- MODAL-->
+      <!-- MODAL-->
         <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Create a new post</button>
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog">
@@ -34,7 +34,15 @@
               <form>
                 <div class="mb-3">
                   <label for="message-text" class="col-form-label">Caption:</label>
-                  <textarea class="form-control" id="message-text"></textarea>
+                  <textarea class="form-control" id="message-text" placeholder="Add the caption of your post here"></textarea>
+                  <div class="icon-foto-locali d-flex mt-2">
+                    <div class="icon1">
+                      <button type="button" class="btn bg-light border"><i class="bi bi-camera-fill"></i></button>
+                    </div>
+                    <div class="icon2 ms-1">
+                      <button type="button" class="btn bg-light border"><i class="bi bi-geo-alt-fill"></i></button>
+                    </div>
+                  </div>
                 </div>
               </form>
             </div>
@@ -46,10 +54,10 @@
         </div>
       </div>
       </li>
-    <!-- DROPDOWN-->
+      <!-- DROPDOWN-->
       <li class="nav-item dropdown">
         
-        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        <button type="button" class="btn btn-secondary dropdown-toggle ms-4" data-bs-toggle="dropdown" aria-expanded="false">
           <i class="bi bi-gear-fill"></i>
         </button>
           <ul class="dropdown-menu dropdown-menu-end">
@@ -57,7 +65,7 @@
             <li><a class="dropdown-item" href="#">Accesibility</a></li>
             <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Log out</a></li>
+            <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
           </ul>
       </li>
     </ul>
@@ -65,80 +73,117 @@
   </nav>
   </section> 
   <section class="medio">
-  <!-- TABS-->
-  <ul class="nav nav-tabs justify-content-center">
-    <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="#grid3">
-        <i class="bi bi-grid-3x3"></i>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#gridcolumna">
-        <i class="bi bi-square-fill"></i>
-      </a>
-    </li>
-  </ul>
+    <!-- TABS-->
+    <ul class="nav nav-tabs justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#grid3">
+          <i class="bi bi-grid-3x3"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#gridcolumna">
+          <i class="bi bi-square-fill"></i>
+        </a>
+      </li>
+    </ul>
   </section>
- <!-- GRID 3X3-->
- <section class="inferior">
- <div class="container-fluid text-center" id="grid3">
-  <div class="row">
-    <div class="col-4">
-      <img src="https://loremflickr.com/640/360" alt="" width="100%" height="250px">
-    </div>
-    <div class="col-4">
-      <img src="https://loremflickr.com/640/360" alt="" width="100%" height="250px">
-    </div>
-    <div class="col-4">
-      <img src="https://loremflickr.com/640/360" alt="" width="100%" height="250px">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-4">
-      <img src="https://loremflickr.com/640/360" alt="" width="100%" height="250px">
-    </div>
-    <div class="col-4">
-      <img src="https://loremflickr.com/640/360" alt="" width="100%" height="250px">
-    </div>
-    <div class="col-4">
-      <img src="https://loremflickr.com/640/360" alt="" width="100%" height="250px">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-4">
-      <img src="https://loremflickr.com/640/360" alt="" width="100%" height="250px">
-    </div>
-    <div class="col-4">
-      <img src="https://loremflickr.com/640/360" alt="" width="100%" height="250px">
-    </div>
-    <div class="col-4">
-      <img src="https://loremflickr.com/640/360" alt="" width="100%" height="250px">
-    </div>
-  </div>
-</div>
-</section>
-<section class="final" >
-  <div class="container-fluid" id="gridcolumna">
-    <div class="card" style="margin:auto auto; width:18rem;">
-      <div class="card-header d-flex justify-content-between">
-        <div class="card-titulo">
-          <h5>My Crazy dog Spark</h5>
+  <!-- GRID 3X3-->
+  <section class="inferior">
+    <div class="container-fluid text-center" id="grid3">
+      <div class="row m-1">
+        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 ">
+          <img src="https://picsum.photos/id/237/1200" alt="img1" class="img-fluid">
         </div>
-        <div class="card-fecha">
-          <span>10/05</span>
+        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          <img src="https://picsum.photos/seed/picsum/1200" alt="img2" class="img-fluid">
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          <img src="https://picsum.photos/1200?grayscale" alt="img3" class="img-fluid">
         </div>
       </div>
-      <div class="card-img">
-        <img src="https://loremflickr.com/640/360" alt="" width="100%" height="250px">
+      <div class="row m-1">
+        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          <img src="https://picsum.photos/id/1/1200" alt="img4" class="img-fluid">
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          <img src="https://picsum.photos/id/10/1200" alt="img5" class="img-fluid">
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          <img src="https://picsum.photos/id/17/1200" alt="img6" class="img-fluid">
+        </div>
       </div>
-      <div class="card-text">
+      <div class="row m-1">
+        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          <img src="https://picsum.photos/id/20/1200" alt="img7" class="img-fluid">
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          <img src="https://picsum.photos/id/24/1200" alt="img8" class="img-fluid">
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          <img src="https://picsum.photos/id/28/1200" alt="img9" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="final" >
+    <div class="container-fluid" id="gridcolumna">
+      <div class="card" style="margin:10px auto; width:25rem;">
+        <div class="card-header d-flex justify-content-between">
+          <div class="card-titulo">
+            <h5>My Crazy dog Spark</h5>
+          </div>
+          <div class="card-fecha">
+            <span>10/05</span>
+          </div>
+        </div>
+        <div class="card-img">
+          <img src="https://picsum.photos/id/40/1200" alt="img-card1" class="img-fluid">
+        </div>
+        <div class="card-text">
           <p class="m-0"><strong>204 Likes</strong></p>
           <p><small>This is an example of a very good photo tthat you can post on instagram</small></p>
+        </div>
+      </div>
+
+      <div class="card" style="margin:10px auto; width:25rem;">
+        <div class="card-header d-flex justify-content-between">
+          <div class="card-titulo">
+            <h5>My Crazy dog Spark</h5>
+          </div>
+          <div class="card-fecha">
+            <span>10/05</span>
+          </div>
+        </div>
+        <div class="card-img">
+          <img src="https://picsum.photos/id/31/1200" alt="img-card2" class="img-fluid">
+        </div>
+        <div class="card-text">
+          <p class="m-0"><strong>204 Likes</strong></p>
+          <p><small>This is an example of a very good photo tthat you can post on instagram</small></p>
+        </div>
+      </div>
+
+      <div class="card" style="margin:10px auto; width:25rem;">
+        <div class="card-header d-flex justify-content-between">
+          <div class="card-titulo">
+            <h5>My Crazy dog Spark</h5>
+          </div>
+          <div class="card-fecha">
+            <span>10/05</span>
+          </div>
+        </div>
+        <div class="card-img">
+          <img src="https://picsum.photos/id/103/1200" alt="img-card3" class="img-fluid">
+        </div>
+        <div class="card-text">
+          <p class="m-0"><strong>204 Likes</strong></p>
+          <p><small>This is an example of a very good photo tthat you can post on instagram</small></p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-      <!--Bootstrap script -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </section>
+  <!--Bootstrap script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
 </body>
 </html>
